@@ -1,13 +1,15 @@
-# 🌐 Sallazark
+# 🌐 Salazarca
 
-Site oficial do projeto **Sallazark**, disponível em:  
+Site oficial do projeto **Salazarca**, disponível em:  
 🔗 https://sallazark.space  
+🔗 [Ver Site](https://sallazark.space)
+🔗 [Ver Site (Link Pelo meu)](https://marksbeys.space/sallazark/)
 
 ---
 
 ## 🚀 Sobre o Projeto
 
-O **Sallazark** é um site desenvolvido com foco em performance, visual moderno e experiência do usuário. O projeto foi criado para representar a marca no ambiente digital de forma profissional, rápida e responsiva.
+O **Salazarca** é um site desenvolvido com foco em performance, visual moderno e experiência do usuário. O projeto foi criado para representar a marca no ambiente digital de forma profissional, rápida e responsiva.
 
 Principais objetivos:
 - Presença online profissional
@@ -19,9 +21,9 @@ Principais objetivos:
 
 ## 🖥️ Tecnologias Utilizadas
 
-- HTML5  
-- CSS3  
-- JavaScript  
+- HTML5 
+- CSS3 
+- JavaScript 
 
 ---
 
@@ -29,8 +31,8 @@ Principais objetivos:
 
 O site foi desenvolvido para funcionar perfeitamente em:
 
-- ✅ Desktop  
-- ✅ Tablets  
-- ✅ Smartphones  
+- ✅ Área de trabalho 
+- ✅ Comprimidos 
+- ✅ Smartphones 
 
 ---
