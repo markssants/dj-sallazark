@@ -1,6 +1,7 @@
 # 🌐 Salazarca
 
 Site oficial do projeto **Salazarca**, disponível em:  
+
 🔗 [Ver Site](https://sallazark.space)
 
 🔗 [Ver Site (Link Pelo meu)](https://marksbeys.space/sallazark/)
