@@ -83,12 +83,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Lógica para o botão "Exibir mais fotos" na seção Fotos Presskit
-    const loadMoreFotosPresskitButton = document.getElementById('load-more-fotos-presskit');
-    if (loadMoreFotosPresskitButton) {
-        loadMoreFotosPresskitButton.addEventListener('click', () => {
+    const loadMoreFotosPresskitContainer = document.getElementById('load-more-fotos-presskit');
+    if (loadMoreFotosPresskitContainer) {
+        const button = loadMoreFotosPresskitContainer.querySelector('button');
+        button.addEventListener('click', () => {
             const grid = document.getElementById('fotos-presskit-grid');
             grid?.classList.add('show-all');
-            loadMoreFotosPresskitButton.style.display = 'none'; // Esconde o botão depois de clicado
+            loadMoreFotosPresskitContainer.style.display = 'none'; // Esconde o botão depois de clicado
         });
     }
 
