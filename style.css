@@ -1,4 +1,8 @@
 /* Reset e Base */
+html {
+    overflow-x: hidden;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -679,6 +683,12 @@ section {
     /* Mostra apenas para a galeria ativa */
 }
 
+.gigs-load-more-container {
+    text-align: center;
+    margin-top: 2rem;
+    display: block;
+}
+
 
 .galeria-overlay {
     position: absolute;
@@ -722,7 +732,7 @@ section {
 
 .arte-video-grid {
     display: grid;
-    /* 3 colunas lado a lado */
+    /* 3 colunas lado a lado no desktop */
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     /* Espaçamento entre os vídeos */
@@ -792,15 +802,18 @@ section {
     align-items: start;
 }
 
-/* Esconde por padrão os itens a partir do quarto */
-.fotos-presskit-grid .fotos-presskit-item:nth-child(n+4) {
-    display: none;
+/* No desktop (3 colunas), alinha a 7ª na esquerda e a 8ª na direita */
+@media (min-width: 992px) {
+    .fotos-presskit-item:nth-child(7) {
+        grid-column: 1;
+    }
+
+    .fotos-presskit-item:nth-child(8) {
+        grid-column: 3;
+    }
 }
 
-/* Mostra todos os itens quando a grade tem a classe 'show-all' */
-.fotos-presskit-grid.show-all .fotos-presskit-item {
-    display: block;
-}
+
 
 .fotos-presskit-item {
     position: relative;
@@ -1112,15 +1125,7 @@ section {
 }
 
 /* Media query para a nova galeria de vídeos em tablets */
-@media (max-width: 1024px) {
-    .arte-video-grid {
-        /* Em tablets, os vídeos ficam em uma única coluna para serem maiores */
-        grid-template-columns: 1fr;
-        gap: 3rem;
-        max-width: 600px;
-        /* Limita a largura para não ficar muito largo */
-    }
-}
+
 
 /* Media query para tablets (contato) */
 @media (max-width: 992px) {
@@ -1138,6 +1143,20 @@ section {
 
 /* Responsive */
 @media (max-width: 768px) {
+
+    /* Reset header floating para mobile */
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        max-width: 100%;
+        transform: none;
+        border-radius: 0;
+        animation: none;
+    }
+
     .hamburger {
         display: flex;
     }
@@ -1189,13 +1208,19 @@ section {
         text-align: center;
     }
 
+
     .arte-video-grid {
-        max-width: 100%;
-        gap: 2.5rem;
+        grid-template-columns: 1fr;
+        max-width: 600px;
+    }
+
+    /* Esconde o 3º vídeo da Arte Visual no mobile */
+    .arte-video-grid .arte-video-item:nth-child(3) {
+        display: none;
     }
 
     .aftermovies-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 2.5rem;
     }
 
@@ -1225,11 +1250,28 @@ section {
     }
 
     .galeria-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Mostra 4 itens por padrão no mobile (2x2) */
+    .galeria-item:nth-child(n+4) {
+        display: block;
+    }
+
+    .galeria-item:nth-child(n+5) {
+        display: none;
+    }
+
+    .galeria-grid.show-all .galeria-item {
+        display: block;
     }
 
     .presskit-items {
         grid-template-columns: 1fr;
+    }
+
+    .fotos-presskit-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .release-controls {
@@ -1243,6 +1285,19 @@ section {
 
     .social-buttons {
         align-items: center;
+    }
+
+    /* Mostra 4 vídeos por padrão no mobile (2x2) em Gigs */
+    .gigs-grid .aftermovie-item:nth-child(n+4) {
+        display: block;
+    }
+
+    .gigs-grid .aftermovie-item:nth-child(n+5) {
+        display: none;
+    }
+
+    .gigs-grid.show-all .aftermovie-item {
+        display: block;
     }
 }
 
