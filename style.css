@@ -1062,7 +1062,13 @@ section {
     color: white;
 }
 
-.social-btn img {
+.social-btn.spotify {
+    background: #1DB954;
+    color: white;
+}
+
+.social-btn img,
+.social-btn svg {
     height: 24px;
     width: auto;
 }
