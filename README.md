@@ -10,7 +10,7 @@ Site oficial do projeto **Sallazark**, disponível em:
 
 ## 🚀 Sobre o Projeto
 
-O **Salazarca** é um site desenvolvido com foco em performance, visual moderno e experiência do usuário. O projeto foi criado para representar a marca no ambiente digital de forma profissional, rápida e responsiva.
+O **Sallazark** é um site desenvolvido com foco em performance, visual moderno e experiência do usuário. O projeto foi criado para representar a marca no ambiente digital de forma profissional, rápida e responsiva.
 
 Principais objetivos:
 - Presença online profissional
