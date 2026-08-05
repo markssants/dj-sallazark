@@ -1,6 +1,6 @@
-# 🌐 Salazarca
+# 🌐 Sallazark
 
-Site oficial do projeto **Salazarca**, disponível em: 
+Site oficial do projeto **Sallazark**, disponível em: 
 
 🔗 [Abrir Site (https://sallazark.space)](https://sallazark.space)
 
